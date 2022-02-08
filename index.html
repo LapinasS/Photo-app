@@ -16,25 +16,30 @@
 
 	<!-- Camera -->
 	<main id="camera">
-
-		<!-- Camera view -->
-    		<video id="camera--view" autoplay playsinline></video>
-
-		<!-- Camera sensor -->
-    		<canvas id="camera--sensor"></canvas>
-
- 		<!-- Camera output -->
-    		<img src="//:0" alt="" id="camera--output">
-
-		<!-- Camera trigger -->
-		<button id="camera--trigger">Take a picture</button>
-		<p>Click the button to get your coordinates.</p>
-
-		<button onclick="getLocation()">Try It</button>
-
-		<p id="demo"></p>
-
-
+		<div class="container">
+			<div class="videoMng">
+			<!-- Camera view -->
+				<div class="viewWrap">
+					<video id="camera--view" autoplay playsinline></video>
+					<div class="sensorWrap">
+						<!-- Camera sensor -->
+						<canvas id="camera--sensor"></canvas>
+					</div>
+				</div>
+				
+				<div class="outputWrap">
+					<!-- Camera output -->
+					<img src="//:0" alt="" id="camera--output">
+				</div>
+					<!-- Camera trigger -->
+					<button id="camera--trigger">Take a picture</button>
+			</div>
+			<div class='gpsMng'>
+				<div>Click the button to get your coordinates.</div>
+				<button onclick="getLocation()">Try It</button>
+				<div id="demo"></div>
+			</div>
+		</div>
 	</main>
 
 	<!-- Reference to your JavaScript file -->

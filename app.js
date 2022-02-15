@@ -50,8 +50,7 @@ function getLocation() {
       const data = await response.json();  
       const results = await data.geocoding_results.RESULTS[0];
       const resultsAddr = results.ADDRESS;
-      document.querySelector('.results').innerHTML += `<div>${results.formatted_address}</div>`;
-      document.querySelector('.results').innerHTML += `<div>${resultsAddr.admin_2}, ${resultsAddr.street_name}, ${resultsAddr.street_number}.</div>`;
+      document.querySelector('.results').innerHTML = `<div>${resultsAddr.admin_2}, ${resultsAddr.street_name}, ${resultsAddr.street_number}, <br> ${lat},   ${lng}</div>`;
       console.log(url);
       console.log(data); 
       console.log (results);

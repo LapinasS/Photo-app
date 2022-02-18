@@ -47,7 +47,7 @@ html, body{
     filter: FlipH;
 }
 #camera--trigger{
-    width: 45%;
+    width: 49%;
     height: 50px;
     background-color: rgb(10, 202, 36);
     color: white;
@@ -57,11 +57,11 @@ html, body{
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     display: inline-block;
-    margin: 5px;
+    margin: 1px;
     
 }
 .buttonGps {
-    width: 45%;
+    width: 49%;
     height: 50px;
     background-color: orange;
     border:none;
@@ -71,7 +71,7 @@ html, body{
     font-size: 16px;
     color: white;
     text-align: center;
-    margin: 5px;
+    margin: 1px;
 }
 .taken{
     height: 100px!important;

@@ -9,6 +9,7 @@
 	<title>ECO Camera App</title> 
 
 	<!-- Link to your main style sheet-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="style.css"> 
 </head>
 
@@ -31,14 +32,10 @@
 						<img src="//:0" alt="" id="camera--output">
 					</div>
 					<div class="gpsLocation">
-						<button onclick="getLocation()">GPS</button>
-						
-						</div>
+						<button class="buttonGps" onclick="getLocation()">GPS</button>
+						<button id="camera--trigger">Take a picture</button>
 					</div>
 				</div>
-							
-					<!-- Camera trigger -->
-					<button id="camera--trigger">Take a picture</button>
 			</div>
 			<div class='gpsMng'>
 				<div>Click the button to get your coordinates.</div>

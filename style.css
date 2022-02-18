@@ -47,18 +47,31 @@ html, body{
     filter: FlipH;
 }
 #camera--trigger{
-    width: 200px;
-    background-color: black;
+    width: 45%;
+    height: 50px;
+    background-color: rgb(10, 202, 36);
     color: white;
     font-size: 16px;
-    border-radius: 30px;
+    border-radius: 5px;
     border: none;
-    padding: 15px 20px;
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    bottom: 30px;
-    left: calc(50% - 100px);
+    display: inline-block;
+    margin: 5px;
     
+}
+.buttonGps {
+    width: 45%;
+    height: 50px;
+    background-color: orange;
+    border:none;
+    display: inline-block;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin: 5px;
 }
 .taken{
     height: 100px!important;
@@ -80,4 +93,9 @@ html, body{
     color: white;
     z-index: 999;
     margin: 15px 15px;
+}
+.gpsLocation {
+    display: flex;
+    justify-content: center;
+    height: 50%;
 }
